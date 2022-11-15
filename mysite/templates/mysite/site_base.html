@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link href="{% static 'mysite/images/op_favicon.ico' %}" rel="icon">
+
+  <title>{% block page_title %}{% endblock page_title %}</title>  
+
+<link href="{% static 'mysite/main.3f6952e4.css' %}" rel="stylesheet">
+{% block extra_head %}
+{% endblock extra_head %}
+</head>
+
+<body class="minimal">
+    {% block body %}
+    {% endblock body %}
+{% block extra_scripts %}
+    {{ block.super }}
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+       type();
+       movingBackgroundImage();
+    });
+</script>
+<script type="text/javascript" src="{% static 'mysite/main.70a66962.js' %}"></script>
+{% endblock extra_scripts %}
+</body>
+</html>
