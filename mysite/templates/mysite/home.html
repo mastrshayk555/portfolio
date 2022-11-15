@@ -1,0 +1,42 @@
+{% extends "mysite/site_base.html" %}
+{% load static %}
+
+{% block page_title %}ObsoletePanda{% endblock page_title %}
+{% block extra_head%}
+{{ block.super }}
+{% endblock extra_head %}
+{% block body %}
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+{% include "mysite/navbar.html" %}
+<!-- Add your site or app content here -->
+  <div class="hero-full-container background-image-container white-text-container" style="background-image: url('{% static 'mysite/images/synthetic-panda.svg' %}')">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+            <div class="text-content">
+              <h1>Hello,<br>
+                <span id="typed-strings">
+                  <span>I'm Jeff Heim</span>
+                  <span>Fullstack Developer</span>
+                  <span>I like to make things.</span>
+                </span>
+                <span id="typed"></span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock body %}
+
+{% block extra_scripts %}
+{{ block.super }}
+{% endblock extra_scripts%}
+
+</html>
