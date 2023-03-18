@@ -7,6 +7,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+:root {
+    --synth-pink: #FF10F0;
+    --synth-blue: #00BCE1;
+}
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -437,7 +442,7 @@ h6 {
     font-family: Roboto Mono, Helvetica, Arial, sans-serif;
     font-weight: 700;
     line-height: 1.1;
-    color: #000
+    color: var(--synth-blue)
 }
 
 .h1 .small,
@@ -547,7 +552,8 @@ h6 {
 }
 
 p {
-    margin: 0 0 9.5px
+    margin: 0 0 9.5px;
+    color: var(--synth-pink)
 }
 
 .lead {
@@ -5707,6 +5713,7 @@ body.minimal {
 .white-text-container a {
     color: #fff
 }
+/*!
 
 .section-container-spacer {
     margin-bottom: 30px
@@ -5728,6 +5735,7 @@ body.minimal {
     }
 }
 
+
 .section-container.only-container {
     min-height: 84vh
 }
@@ -5737,7 +5745,7 @@ body.minimal {
         padding-top: 30px
     }
 }
-
+!*/
 .background-image-container {
     background-size: cover;
     background-repeat: no-repeat;
@@ -5794,7 +5802,9 @@ body.minimal {
 
 body,
 p {
-    font-weight: 300;
+    font-family: Helvetica;
+    font-weight: 900;
+    font-size: medium;
     letter-spacing: .8px;
     line-height: 25px
 }
