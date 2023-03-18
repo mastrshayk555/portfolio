@@ -2,22 +2,26 @@ from django.shortcuts import render
 from django.views.generic import DetailView
 
 
-class home(DetailView):
+class Home(DetailView):
     def get(self, request):
         return render(request, 'mysite/home.html')
 
-class about(DetailView):
+class About(DetailView):
     def get(self, request):
         return render(request, 'mysite/about.html')
 
-class works(DetailView):
+class Projects(DetailView):
     def get(self, request):
         return render(request, 'mysite/projects.html')
         
-class contact(DetailView):
+class Contact(DetailView):
     def get(self, request):
         return render(request, 'mysite/contact.html')
 
-class components(DetailView):
+class Components(DetailView):
     def get(self, request):
         return render(request, 'mysite/components.html')
+    
+class GunViolence(DetailView):
+    def get(self, request):
+        return render(request, 'mysite/gun_violence.html')
