@@ -7,6 +7,8 @@ name = "pypi"
 django = "*"
 environs = "*"
 django-environ = "*"
+django-oauth-toolkit = "*"
+djangorestframework = "*"
 
 [dev-packages]
 
